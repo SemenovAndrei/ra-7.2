@@ -10,6 +10,9 @@ function Popular(props) {
   )
 }
 
-Popular.propTypes = {}
+Popular.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
+    .isRequired,
+}
 
 export default Popular

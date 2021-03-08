@@ -12,6 +12,9 @@ function Article(props) {
   )
 }
 
-Article.propTypes = {}
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  views: PropTypes.number.isRequired,
+}
 
 export default Article

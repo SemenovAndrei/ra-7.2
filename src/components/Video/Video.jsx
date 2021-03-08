@@ -7,15 +7,18 @@ function Video(props) {
       <iframe
         title="uniq"
         src={props.url}
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
       <p className="views">Просмотров: {props.views}</p>
     </div>
   )
 }
 
-Video.propTypes = {}
+Video.propTypes = {
+  url: PropTypes.string.isRequired,
+  views: PropTypes.number.isRequired,
+}
 
 export default Video
