@@ -1,11 +1,12 @@
 .App {
-  width: 1200px;
-  min-height: 100vh;
+  width: 1600px;
+  /* min-height: 100vh; */
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   font-size: 1.2rem;
 }
 
